@@ -1,6 +1,6 @@
 package net.simpleframework.module.pdf;
 
-import net.simpleframework.ctx.service.io.IIOModuleContext;
+import net.simpleframework.ctx.IModuleContext;
 
 /**
  * Licensed under the Apache License, Version 2.0
@@ -8,7 +8,7 @@ import net.simpleframework.ctx.service.io.IIOModuleContext;
  * @author 陈侃(cknet@126.com, 13910090885) https://github.com/simpleframework
  *         http://www.simpleframework.net
  */
-public interface IPDFContext extends IIOModuleContext {
+public interface IPDFContext extends IModuleContext {
 
 	static final String MODULE_NAME = "simple-module-pdf";
 }

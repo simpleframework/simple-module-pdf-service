@@ -1,8 +1,8 @@
 package net.simpleframework.module.pdf.impl;
 
 import static net.simpleframework.common.I18n.$m;
+import net.simpleframework.ctx.AbstractModuleContext;
 import net.simpleframework.ctx.Module;
-import net.simpleframework.ctx.service.io.AbstractIOModuleContext;
 import net.simpleframework.module.pdf.IPDFContext;
 
 /**
@@ -11,7 +11,7 @@ import net.simpleframework.module.pdf.IPDFContext;
  * @author 陈侃(cknet@126.com, 13910090885) https://github.com/simpleframework
  *         http://www.simpleframework.net
  */
-public class PDFContext extends AbstractIOModuleContext implements IPDFContext {
+public class PDFContext extends AbstractModuleContext implements IPDFContext {
 
 	@Override
 	protected Module createModule() {
