@@ -1,6 +1,7 @@
 package net.simpleframework.module.pdf.impl;
 
 import static net.simpleframework.common.I18n.$m;
+
 import net.simpleframework.ctx.AbstractModuleContext;
 import net.simpleframework.ctx.Module;
 import net.simpleframework.module.pdf.IPDFContext;
@@ -15,6 +16,6 @@ public class PDFContext extends AbstractModuleContext implements IPDFContext {
 
 	@Override
 	protected Module createModule() {
-		return new Module().setName(MODULE_NAME).setText($m("PDFContext.0")).setOrder(38);
+		return super.createModule().setName(MODULE_NAME).setText($m("PDFContext.0")).setOrder(38);
 	}
 }
