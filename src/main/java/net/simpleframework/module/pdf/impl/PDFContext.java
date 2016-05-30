@@ -15,6 +15,6 @@ public class PDFContext extends AbstractModuleContext implements IPDFContext {
 
 	@Override
 	protected Module createModule() {
-		return new Module().setName(MODULE_NAME).setText($m("PDFContext.0")).setOrder(38);
+		return super.createModule().setName(MODULE_NAME).setText($m("PDFContext.0")).setOrder(38);
 	}
 }
